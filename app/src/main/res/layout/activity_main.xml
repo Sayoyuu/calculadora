@@ -8,8 +8,8 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="383dp"
-        android:layout_height="445dp"
+        android:layout_width="387dp"
+        android:layout_height="534dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -36,6 +36,7 @@
             android:background="#668E7842"
             android:backgroundTint="#F1CC6E"
             android:ems="10"
+            android:gravity="center"
             android:inputType="number" />
 
         <TextView
@@ -51,35 +52,74 @@
         <EditText
             android:id="@+id/txtNmrDois"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="50dp"
             android:background="#668E7842"
             android:backgroundTint="#F1CC6E"
             android:ems="10"
+            android:gravity="center"
             android:inputType="number" />
+
+        <TextView
+            android:id="@+id/vazio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/btnSomar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Somar" />
+            android:onClick="somar"
+            android:text="Somar"
+            android:textColor="#F38BED" />
 
         <Button
             android:id="@+id/btnSubtrair"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Subtrair" />
+            android:onClick="subtrair"
+            android:text="Subtrair"
+            android:textColor="#F38BED" />
 
         <Button
             android:id="@+id/btnMultiplicar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Multiplicar" />
+            android:onClick="multiplicar"
+            android:text="Multiplicar"
+            android:textColor="#F38BED" />
 
         <Button
             android:id="@+id/btnDividir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dividir" />
+            android:onClick="dividir"
+            android:text="Dividir"
+            android:textColor="#F38BED" />
+
+        <TextView
+            android:id="@+id/nulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="O resultado é:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/SwResultado"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#668E7842"
+            android:backgroundTint="#F1CC6E"
+            android:gravity="center"
+            android:hint="..."
+            android:textSize="18sp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
